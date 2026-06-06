@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" >
+<title>Countdown Timer</title>
+<style>
+span { background:RoyalBlue;color:White;margin:3px;padding:3px;font:2em sans-serif; }
+</style>
+</head>
+<body>
+
+<p id="info"></p>
+
+<script>
+
+const count = ( function ( ) {
+
+	let num = 10
+	return ( function ( ) { return num-- } )
+	
+} )( )
+
+
+function countDown( )
+{
+  const info = document.getElementById( 'info' )
+  let timerId = null
+  let num = count( )  
+ 
+  if ( num > 0 ) 
+  { 
+    info.innerHTML += '<span>' + num + '</span>'
+    timerId = window.setTimeout( countDown , 1000 )
+  }
+  else
+  { 
+    info.innerHTML += '<span>Lift Off!</span>'
+    window.clearTimeout( timerId )
+  }
+}
+
+countDown()
+
+</script>
+</body>
+</html>

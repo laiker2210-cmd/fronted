@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Logical Operators</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+( function ( ) {
+
+  let result, yes = true, no = false
+  
+  result = yes && yes
+  console.log( 'Are both true? ' + result )
+  
+  result = yes && no
+  console.log( 'Are both still true? ' + result )
+  
+  result = yes || no
+  console.log( 'Are either true? ' + result )
+  
+  result = no || no
+  console.log( 'Are either still true? ' + result )
+  
+  console.log( 'Original value: ' + yes )
+  yes = !yes
+  console.log( 'Toggled value: ' + yes )
+
+} ) ( )
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Find String</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+( function ( ) {
+
+  let str = 'JavaScript in easy steps'
+
+  console.log( '"Script" Search: ' + str.search( 'Script' ) )
+  console.log( '"script" Search: ' + str.search( 'script' ) )
+
+  console.log( '\n"Script" Match: ' + str.match( 'Script' ) )
+  console.log( '"script" Match: ' + str.match( 'script' ) )
+
+  console.log( '\nindexOf "s": ' + str.indexOf( 's' ) )
+  console.log( 'indexOf "m": ' + str.indexOf( 'm' ) )
+  console.log( '\nlastIndexOf "s": ' + str.lastIndexOf( 's' ) )
+  console.log( 'lastIndexOf "m": ' + str.lastIndexOf( 'm' ) )
+
+  console.log( '\ncharAt 0: ' + str.charAt( 0 ) )
+  console.log( 'charCodeAt 0: ' + str.charCodeAt( 0 ) )
+  console.log( 'fromCharCode: ' + 
+					String.fromCharCode( 74, 97, 118, 97  ) )
+
+  console.log( '\nOriginal: ' + str )
+  console.log( 'Replaced: ' + str.replace( 'easy', 'simple' ) )
+
+} ) ( )
+
+</script>
+</body>
+</html>

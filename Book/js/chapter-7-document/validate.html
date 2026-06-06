@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Form Validation</title>
+<style>
+* { font:1em sans-serif; }
+</style>
+</head>
+<body>
+
+<form id="contact" action="echo.pl" method="POST">
+<fieldset>
+<legend>Please Enter Your Details</legend>
+Name: <input type="text" name="Name" value="">
+<br><br>
+Email: <input type="text" name="Email" value="">
+</fieldset>
+<input type="submit">
+</form>
+
+<script>
+
+( function ( ) {
+
+  const form = document.getElementById( 'contact' )
+  
+  form.addEventListener( 'submit' , 
+		function ( event ) { validate( form, event ) } )
+} ) ( )
+
+function validate( form, event ) {
+  let value = form.elements[ 'Name' ].value
+  if( value === '' ) {
+    alert( 'Please Enter Your Name' )
+	event.preventDefault( ) ; return }
+  
+  value = form.elements[ 'Email' ].value 
+  if( ( value === '' ) || ( value.indexOf('@') === -1 ) || 
+  ( value.indexOf('.') === -1 ) ) {
+    alert( 'Please Enter A Valid Email Address' )
+	event.preventDefault( ) }
+}
+
+</script>
+</body>
+</html>

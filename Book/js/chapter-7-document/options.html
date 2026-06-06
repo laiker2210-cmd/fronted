@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Select Options</title>
+<style>
+* { font:1em sans-serif; }
+p,form { display:inline-block;vertical-align:top;margin-top:2px; }
+</style>
+</head>
+<body>
+
+<form action="echo.pl" method="POST">
+<select id="list" name="City">
+<option value="Rome" selected>Rome</option>
+<option value="London">London</option>
+<option value="New York" >New York</option>
+</select>
+<input type="submit">
+</form>
+
+<p id="info"></p>
+
+
+<script>
+
+( function ( ) {
+
+  const list = document.getElementById( 'list' )
+  list.addEventListener( 'change' , 
+		function ( ) { reactTo( list, event ) } )
+  addEventListener( 'load' , 
+		function ( ) { reactTo( list, event ) } )
+} ) ( )
+
+
+function reactTo( list, event ) {
+
+  const info = document.getElementById( 'info' )
+  let index = list.options.selectedIndex
+  let city = list.options[ index ].value  
+  info.innerHTML =	event.type + '<br>Selected: '
+  info.innerHTML += city + '<br>Index: ' + index
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* .active {
+    border: 5px solid green;
+}
+
+.alert {
+    border: 5px solid red;
+}
+
+.hidden {
+    display: none;
+} */
+
+/*  */
+
+/* .active {
+    background: yellow;
+} */
+
+/*  */
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 30px;
+    display: none;
+}
+
+.title {
+    cursor: pointer;
+}
+
+.title::before {
+    content: "►"; Alt + 16
+    color: red;
+    font-family: 90%;
+}
+
+.menu.open .title::before {
+content: "▼"; Alt + 31
+}
+
+.menu.open ul{
+    display: block;
+} */
+
+/*-----редактор-----*/
+
+/* body {
+    padding: 30px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.brush {
+    position: fixed;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    translate: -50% -50%;
+    transition: scale .2s;
+    z-index: 2;
+}
+
+.paint{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    translate: -50% -50%;
+    border-radius: 50px;
+    background: green;
+    z-index: 1;
+} */
+
+/* ---------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-cover {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    height: 150px;
+    padding: 30px;
+    color: white;
+    line-height: 150px;
+}
+
+.gray {
+    background: gray;
+}
+
+.blue {
+    background: #115588;
+}
+
+.pagination-cover {}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.pagination-item a {
+    border: 2px solid #eee;
+    padding: 4px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    text-decoration: none;
+    color: gray;
+
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.pagination-item.active a {
+    background: #bbddff;
+    border-color: #81bcf7;
+}
+
+.pagination-item:hover a {
+    border-color: #81bcf7;
+}
+
+.pagination-item.disable {
+    opacity: .6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}

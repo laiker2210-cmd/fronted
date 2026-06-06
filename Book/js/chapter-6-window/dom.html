@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Document Object Model</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<ol id="props" style="column-count:3"></ol>
+
+<script>
+
+( function ( ) {
+
+  const list = document.getElementById( 'props' )
+  let property = null
+  
+  for( property in window )
+  {
+    if( property ){ list.innerHTML += '<li>' + property }
+  }
+  
+} ) ( )
+
+</script>
+</body>
+</html>

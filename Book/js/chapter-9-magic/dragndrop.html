@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>DragNdrop</title>
+</head>
+
+<body>
+
+<p>
+<img id="bin" src="bin.png" alt="Bin">
+<img class="folder" id="Red"    src="red.png" alt="Folder">
+<img class="folder" id="Yellow" src="yel.png" alt="Folder">
+<img class="folder" id="Green"  src="grn.png" alt="Folder">
+</p>
+
+<fieldset>
+<legend>Folders Dropped:</legend>
+<ol id="list" ></ol>
+</fieldset>
+
+<script>
+
+document.addEventListener( 'DOMContentLoaded', dragNdrop )
+
+function dragNdrop( ) { 
+  const bin = document.getElementById( 'bin' )
+  const folders = 
+  document.getElementsByClassName( 'folder' )
+  const list = document.getElementById( 'list' )
+
+  let i = 0
+  for ( i = 0 ; i < folders.length ; i++ ) {
+    folders[ i ].ondragstart = function( event ) { 
+	  event.dataTransfer.setData( 'Text', this.id ) }
+  }
+  bin.ondragover = function( event ) { return false }	
+  
+  bin.ondrop = function( event ) { 
+    const did = event.dataTransfer.getData( 'Text' ) 		
+    const tag = document.getElementById( did )					
+    if ( did === 'bin' ) { return false }			
+    else { list.innerHTML += '<li>' + did }		
+    tag.parentNode.removeChild( tag )	
+  }
+  
+}
+
+</script>
+</body>
+
+</html>

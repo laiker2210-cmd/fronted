@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Browser Details</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<ul id="list"></ul>
+
+
+<script>
+
+( function ( ) {
+
+  const list = document.getElementById( 'list' )
+  
+  list.innerHTML = '<li>Browser: ' + navigator.appName
+  list.innerHTML += '<li>Code Name: ' + navigator.appCodeName
+  
+  list.innerHTML += '<li>Version: ' + navigator.appVersion
+  list.innerHTML += '<li>Platform: ' + navigator.platform
+  
+  if( window.addEventListener )
+  {
+    list.innerHTML += '<li>This is a modern DOM browser'
+  }
+
+} ) ( )
+
+</script>
+</body>
+</html>

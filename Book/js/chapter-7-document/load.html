@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Load Event</title>
+<style>
+* { font:1em sans-serif; }
+</style>
+</head>
+<body>
+
+<p><a href="cookie.html">Link</a></p>
+
+<p id="info"></p>
+
+<script src="cookie.js"></script>
+
+<script>
+
+addEventListener( 'load', welcome )
+
+function welcome( ) {
+  const info = document.getElementById( 'info' )
+  if( getCookie( 'Name' ) )
+  {
+    info.innerHTML = 'Welcome Back, ' + getCookie( 'Name' )
+  }
+  else
+  {
+	let name = prompt( 'Please Enter Your Name', 'User' )
+	setCookie( 'Name', name, 7 )
+	info.innerHTML = 'Welcome, ' + name
+  }
+}
+
+</script>
+</body>
+</html>

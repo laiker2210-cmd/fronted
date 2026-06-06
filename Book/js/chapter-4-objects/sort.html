@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Sort Elements</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+( function ( ) {
+
+  let hues = [ 'Red', 'RED', 'red', 'Green', 'Blue' ]
+  let nums = [ 1, 20, 3, 17, 14, 0.5 ]
+
+  console.log( 'Colors: ' + hues )
+  console.log( 'Dictionary Sort: ' + hues.sort( ) )
+  console.log( '\nNumbers: ' + nums )
+  console.log( 'Dictionary Sort: ' + nums.sort( ) )
+  
+  console.log( 'Numerical Sort: ' + nums.sort( sortNums ) )
+  
+  console.log( 'Reversed Sort: ' + nums.reverse( ) )
+  
+} ) ( )
+
+function sortNums( numOne, numTwo ) {
+  return numOne - numTwo
+}
+
+</script>
+</body>
+</html>

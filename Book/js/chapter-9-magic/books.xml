@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog>
+  <book>
+    <id>978-1-84078-840-2</id>
+    <title>C Programming in easy steps, 5th Edition</title>
+  </book>
+  <book>
+    <id>978-1-84078-757-3</id>
+    <title>C++ Programming in easy steps, 5th Edition</title>
+  </book>
+	<book>
+	  <id>978-1-84078-719-1</id>
+	  <title>C# Programming in easy steps</title>
+    </book>
+    <book>
+	  <id>978-1-84078-642-2</id>
+	  <title>Coding for Beginners in easy steps</title>
+    </book>
+	<book>
+	  <id>978-1-84078-873-0</id>
+	  <title>Java in easy steps, 7th Edition</title>
+    </book>
+	<book>
+	  <id>978-1-84078-718-4</id>
+	  <title>PHP 7 in easy steps</title>
+    </book>
+	<book>
+	  <id>978-1-84078-812-9</id>
+	  <title>Python in easy steps, 2nd Edition</title>
+    </book>
+    <book>
+	  <id>978-1-84078-795-5</id>
+	  <title>R for Data Analysis in easy steps</title>
+    </book>
+	    <book>
+	  <id>978-1-84078-543-2</id>
+	  <title>SQL in easy steps, 3rd Edition</title>
+    </book>
+	<book>
+	  <id>978-1-84078-872-3</id>
+	  <title>Visual Basic in easy steps, 6th Edition</title>
+    </book>
+</catalog>

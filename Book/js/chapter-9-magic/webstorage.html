@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Web Storage</title>
+<style>
+* { font: 1em sans-serif; }
+legend { padding:3px; color:White; background:Tomato ; }
+</style>
+</head>
+
+<body>
+
+<fieldset>
+<legend id="legend">Enter Data</legend>
+<input id="data" type="text">
+<button onclick="store( )">Store Data</button>
+<button onclick="recall( )">Recall Data</button>
+<button onclick="remove( )">Reset</button>
+</fieldset>
+
+<script>
+
+function store() {
+  let data = document.getElementById( 'data' ).value
+  if ( data === '' ) { return false } else {
+    localStorage.setItem( 'ls_data', data )
+    document.getElementById( 'data' ).value = ''
+    document.getElementById( 'legend' ).innerText = 
+	localStorage.getItem( 'ls_data' ) + ' - Is Stored'
+  }
+}
+
+function recall() {
+  if ( localStorage.getItem( 'ls_data' ) === null ) {
+    document.getElementById( 'legend' ).innerText = 
+	'Enter Data' ; return false } else {
+    document.getElementById( 'data' ).value = ''
+    document.getElementById( 'legend' ).innerText = 
+	'Stored Data: ' + localStorage.getItem( 'ls_data' )
+  }
+}
+
+function remove() {
+  if ( localStorage.getItem( 'ls_data' ) === null ) { 
+    document.getElementById( 'legend' ).innerText = 
+	'Enter Data' ; return false } else {
+    document.getElementById( 'legend' ).innerText = 
+	localStorage.getItem( 'ls_data' ) + ' Is Removed'
+    localStorage.removeItem( 'ls_data' )
+    document.getElementById( 'data' ).value = ''
+  }
+}
+
+</script>
+</body>
+
+</html>

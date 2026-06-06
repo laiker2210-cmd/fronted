@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Closure</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<script>
+
+const add = ( function ( ) {  
+  let count = 0
+  const nested = function ( ) { return count = count + 1 }
+  return nested
+} ) ( )
+
+console.log( 'Count is ' + add( ) )
+console.log( 'Count is ' + add( ) )
+console.log( 'Count is ' + add( ) )
+
+console.log( add.prototype )
+
+</script>
+</body>
+</html>

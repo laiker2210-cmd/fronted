@@ -1,0 +1,52 @@
+/* p {
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.red {
+    border: 2px solid red;
+    background: #ffcccc;
+}
+
+.green {
+    border: 2px solid #00aa00;
+    background: #ddffdd;
+} */
+
+/* ---------------------- */
+
+/* body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input,
+#list {
+    display: inline-block;
+}
+
+#list {
+    padding: 0;
+    list-style: none;
+}
+
+#list span {
+    margin-right: 5px;
+}
+
+#list .remove,
+#list .mark {
+    color: blue;
+    cursor: pointer;
+}
+
+#list .remove:hover,
+#list .mark:hover {
+    text-decoration: underline;
+}
+
+#list .done .task {
+    text-decoration: line-through;
+} */
+
+/* -------------------------------- */

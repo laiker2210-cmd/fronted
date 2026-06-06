@@ -1,0 +1,14 @@
+p {
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.red {
+    border: 2px solid red;
+    background: #ffcccc;
+}
+
+.green {
+    border: 2px solid #00aa00;
+    background: #ddffdd;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Arrow Function</title>
+
+<style>
+
+</style>
+
+</head>
+<body>
+
+
+<!-- THIS IS AN UNLISTED BONUS EXAMPLE THAT DEMONSTRATES DIFFERENT this TREATMENT -->
+
+
+<button id="regular">Call Regular Function</button>
+<button id="arrow">Call Arrow Function</button>
+
+<script>
+
+( function ( ) {
+
+  let regular = function() { alert( this  ) }
+  window.document.getElementById('regular').addEventListener('click', regular )
+
+  let arrow = () => alert( this )
+  window.document.getElementById('arrow').addEventListener('click', arrow )
+  
+  } ) ( )
+
+</script>
+</body>
+</html>

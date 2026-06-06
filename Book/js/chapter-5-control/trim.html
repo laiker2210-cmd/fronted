@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Trim String</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+( function ( ) {
+
+  let str = '	 Love For All, Hatred For None.	 '
+
+  console.log( 'String: ' + str )
+  console.log( 'Starts With "L" ? ' + str.startsWith( 'L' ) ) 
+  console.log( 'Ends With "." ? ' +str.endsWith( '.' ) ) 
+  console.log( 'First Letter: ' + str[0] )
+
+  str = str.trim()
+
+  console.log( '\nTrimmed: ' + str )
+  console.log( 'Starts With "L" ? ' + str.startsWith( 'L' ) ) 
+  console.log( 'Ends With "." ? ' +str.endsWith( '.' ) )
+  console.log( 'First Letter: ' + str[0] )
+
+  console.log( '\nIncludes "Hat" ? '+ str.includes( 'Hat' ) )
+  console.log( 'Includes "hat" ? '+ str.includes( 'hat' ) )
+
+  console.log( '\nRepeat:\n' + str.repeat( 10 ) )
+
+} ) ( )
+
+</script>
+</body>
+</html>

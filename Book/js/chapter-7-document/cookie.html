@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Cookies</title>
+<style>
+* { font:1em sans-serif; }
+</style>
+</head>
+<body>
+
+<ul id="list"></ul> <script src="cookie.js"></script>
+
+<script>
+
+( function ( ) {
+
+  setCookie( 'User','Mike McGrath,12345', 7 )
+
+  const list = document.getElementById( 'list' )
+  let i, value = getCookie( 'User' ) 
+  if( value.indexOf( ',' ) ) { 
+    value = value.split( ',' ) 
+  }  
+  for( i = 0 ; i < value.length ; i++ ) {
+    list.innerHTML += '<li>' + value[ i ]
+  }   
+  
+} ) ( )
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Location</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<p id="info">
+<a id="frag">Fragment Anchor</a>
+</p>
+
+<script>
+
+( function ( ) {
+
+  const info = document.getElementById( 'info' )
+  let jump = confirm( 'Jump to Fragment?' )
+  
+  if( jump )
+  {
+    location = location.href + '#frag'
+  }
+  
+  info.innerHTML += '<hr>Href: ' + location.href
+  info.innerHTML += '<br>Protocol: ' + location.protocol
+  info.innerHTML += '<br>Host: ' + location.host  
+  info.innerHTML += '<br>Path: ' + location.pathname  
+  info.innerHTML += '<br>Hash: ' + location.hash
+  
+} ) ( )
+
+</script>
+</body>
+</html>

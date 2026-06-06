@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Document Arrays</title>
+<style>
+* { font:1em sans-serif; }
+form { width:500px;height:100px;background:url(bg.png); }
+</style>
+</head>
+<body>
+
+<form>
+  <img src="user.png" alt="User" height="64" width="64">
+  <input type="text" name="topic" size="30" value="Type Your Question Here" >
+  <input type="button" value="Ask a Question" > <br> 
+  <a href="formhelp.html" style="margin:5px">Help?</a>
+</form>
+
+<ul id="list"></ul> 
+
+
+<script>
+( function ( ) {
+
+  const list = document.getElementById( 'list' )
+  
+  list.innerHTML = '<li>No. Forms: ' + 
+							document.forms.length
+  list.innerHTML += '<li>No. Links: ' + 
+							document.links.length
+  list.innerHTML += '<li>No. Images: ' + 
+							document.images.length
+  
+  list.innerHTML += '<li>No. Style Sheets: ' + 
+							document.styleSheets.length
+  list.innerHTML += '<li>No. Scripts: ' + 
+							document.scripts.length
+
+  list.innerHTML += '<li>First Image URL: ' + 
+							document.images[ 0 ].src
+  list.innerHTML += '<li>First Form Element Value: ' + 
+							document.forms[ 0 ].elements[ 0 ].value
+
+} ) ( )
+</script>
+</body>
+</html>

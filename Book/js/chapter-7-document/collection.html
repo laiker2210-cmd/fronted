@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Element Collection</title>
+<style>
+ol,p { display:inline-block;padding:10px 10px;vertical-align:top; }
+ol { background:Thistle;list-style-position:inside; }
+</style>
+</head>
+<body>
+
+<ol>
+<li class="fruit">Apple</li>
+<li class="nut">Almond</li>
+<li class="fruit">Apricot</li>
+</ol>
+
+<ol>
+<li class="fruit">Blackberry</li>
+<li id="country" class="nut">Brazil</li>
+<li class="fruit">Banana</li>
+</ol>
+
+<p id="info"></p>
+
+
+<script>
+
+( function ( ) {
+
+  const info = document.getElementById( 'info' )
+  const item = document.getElementById( 'country' )  
+  const lists = document.getElementsByTagName( 'ol' )
+  const fruits = document.getElementsByClassName( 'fruit' )
+  let i = 0
+  
+  info.innerHTML = item + ' Id: ' + item.innerText + '<br>'
+  
+  info.innerHTML += '<br>' + lists + ' Tags:<br>'
+  for( i = 0; i < lists.length ; i++ ) {
+    info.innerHTML += ( i + 1 ) + ' of ' + lists.length
+    info.innerHTML += ' : ' + lists[i].innerText + '<br>'
+  }
+  
+  info.innerHTML += '<br>' + fruits + ' Class:<br>'
+  for( i = 0 ; i < fruits.length ; i++ ) {
+    info.innerHTML += ( i + 1 ) + ' of ' + fruits.length
+    info.innerHTML += ' : ' + fruits[i].innerText + '<br>'
+  }
+  
+} ) ( )
+
+</script>
+</body>
+</html>

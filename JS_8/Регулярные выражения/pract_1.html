@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<form action="#test.php" method="post" id="f1"> 
+  <p>Логин: <input id="login" name="login" type="text" onKeyUp="check('login', reg_login)" minlength="3" maxlength="10" required/></p>
+  <p>Имя: <input id="name" name="name" type="text" onKeyUp="check('name', reg_name)" minlength="3" maxlength="15" required/></p>
+  <p>Дата: <input id="date" name="date" type="text" onKeyUp="check('date', reg_date)" placeholder="ГГГГ-ММ-ДД"/></p>
+  <p>Пароль: <input id="pass" name="pass" type="password" onKeyUp="check('pass', reg_pass)" minlength="6" maxlength="15" required/></p>
+</form>
+
+
+<script>
+let reg_login = /^[A-Za-z_-]{3,10}$/;  
+let reg_name = /^[А-Яа-яЁё]{3,15}$/;    
+let reg_date = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/; 
+let reg_pass = /^[A-Za-z0-9+*_.\-]{6,15}$/;  
+
+/*
+ЗАДАЧА
+Дата: 2021-01-31 / сделать ограничение только на реальную дату - 13 месяца не бывает и в днях максимум 31 день
+Логин: английские буквы в любом регистре, подчеркивание и дефис
+Имя: русские буквы в любом регистре
+Пароль: английские буквы в любом регистре, цифры, знаки: +*_- и точка 
+Дополнение: внести ограничение на колличество символов
+*/
+
+function check(id, reg){ //функция проверки полей, принимает значение id поля и регулярное выражение для него
+  let st = document.getElementById(id);
+  let v = document.getElementById(id).value;   
+  
+  if (reg.test(v) ){
+	st.style.border = '1px solid green';
+    return true;
+  }
+  else {
+	st.style.border = '1px solid red';
+    return false;
+  }
+}
+</script>
+</body>
+</html>

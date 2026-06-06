@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Bitwise Operators</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+( function ( ) {
+
+  let numOne = 10, numTwo = 5
+  
+  console.log( 'numOne: ' + numOne )
+  console.log( 'numTwo: ' + numTwo )
+
+  numOne = numOne ^ numTwo
+  numTwo = numOne ^ numTwo
+  numOne = numOne ^ numTwo
+  
+  console.log( '\n' + 'numOne: ' + numOne )
+  console.log( 'numTwo: ' + numTwo )
+  
+} ) ( )
+
+</script>
+</body>
+</html>

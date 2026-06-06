@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Messaging</title>
+<style>
+body { font: 1em sans-serif; }
+h1{ margin: 0 0 0 0; color:Tomato; }
+p { margin:0 0 15px 0;}
+</style>
+</head>
+
+<body>
+
+<!-- Replace example.com with your own remote domain in this document. -->
+
+<h1>Sender</h1>
+<p id="host">Main Page Domain: </p>
+<iframe id="cage" width="450" height="120" src="http://example.com/receiver.html" ></iframe>
+<button onclick="sendMsg()">Send Message</button>
+
+
+
+<script>
+
+document.getElementById( 'host' ).innerText += 
+document.domain
+
+function sendMsg() {
+  const cage = 
+  document.getElementById( 'cage' ).contentWindow
+  cage.postMessage( 'Message Received from: ' + 
+		document.domain , 'http://example.com' )
+}
+
+</script>
+</body>
+
+</html>

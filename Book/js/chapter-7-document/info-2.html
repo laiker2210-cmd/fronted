@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Info Document</title>
+<style>
+* { font: 1em sans-serif; }
+li { padding: 5px 5px; }
+</style>
+</head>
+<body>
+
+<ul id="list"></ul>
+
+
+<script>
+
+( function ( ) {
+
+  const list = document.getElementById( 'list' )
+  
+  list.innerHTML = '<li>Linked From: ' + document.referrer
+  list.innerHTML += '<li>Title: ' + document.title
+  list.innerHTML += '<li>URL: ' + document.URL
+  list.innerHTML += '<li>Domain: ' + document.domain
+  list.innerHTML += '<li>Last Modified: ' + 
+								document.lastModified
+
+} ) ( )
+
+</script>
+</body>
+</html>
