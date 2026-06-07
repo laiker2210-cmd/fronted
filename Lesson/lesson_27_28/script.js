@@ -242,7 +242,7 @@ console.log(re); */
 
 //<!-- ------------пример------------- -->
 
-let but = document.querySelector("#but");
+/* let but = document.querySelector("#but");
 but.addEventListener("click", smsUser);
 
 function smsUser() {
@@ -260,15 +260,17 @@ function smsUser() {
     </fieldset>`) 
 
 
-   /*  let form = document.querySelector("form")
-    form.insertAdjacentHTML("afterend", `
-        <fieldset>
-            <legend><b>${name}</b></legend>
-            <div>${text}</div>
-        </fieldset>`); */
-}
+   //let form = document.querySelector("form")
+    //form.insertAdjacentHTML("afterend", `
+      //  <fieldset>
+       //     <legend><b>${name}</b></legend>
+        //    <div>${text}</div>
+        //</fieldset>`);
+} */
 
-
+//-------------------------------------------------------------------------------
+//работа с githab
+console.log("Вносим изменения");
 
 
 

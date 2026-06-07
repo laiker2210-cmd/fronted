@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 16px;
+}
+
+fieldset{
+    max-width: 450px;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid black;
+    font-size: 24px;
+    
+}
+
+legend{
+    font-weight: bold;
+}
+
+#but:hover{
+    color: green;
+    background-color: aliceblue;
+}
