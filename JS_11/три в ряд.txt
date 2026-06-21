@@ -1,0 +1,28 @@
+let start = document.querySelector("#start");
+let game = document.querySelector("#game");
+
+start.addEventListener("click", startGame);
+
+
+function startGame() {
+    //console.log(start);
+    start.classList.add("hide");
+    game.style.background = "#FFF";
+
+    renderBox();
+}
+
+function renderBox() {
+    let box = document.createElement("div");
+    box.style.width = box.style.height = "50px";
+    box.style.background = "#000"
+    box.style.position = "absolute";
+    box.style.left = "70px";
+    box.style.top = "50px";
+    box.style.cursor = "pointer";
+    
+
+    game.insertAdjacentElement("afterbegin", box)
+}
+
+сделать игру потипу 3 в ряд

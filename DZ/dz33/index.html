@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ33</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Карточка товара -->
+    <div class="product-card">
+        <img src="phone.png" alt="Товар">
+        <h2>Смартфон XXXXXX Super Turbo Pro Max 122</h2>
+        <div class="price">999 998 денежных едениц, у нас дешевле чем в Эльдорадо</div>
+        <div class="description">
+            Мощный смартфон с отличной камерой и аккумулятором как на авто.
+            Идеальный выбор на все случаи жизни.
+            Пы.Сы. Не является рекламой.
+        </div>
+        <button class="btn-consult" id="consultBtn">Получить консультацию</button>
+    </div>
+
+    <!-- Затемнение -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+        <span class="close" id="closeBtn">&times;</span>
+        <h3>Вы получите подробную консультацию</h3>
+
+        <div class="form-group">
+            <label>Имя <span class="required">*</span></label>
+            <input type="text" id="name" placeholder="Введите ваше имя">
+            <div class="error-message" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Электронная почта <span class="required">*</span></label>
+            <input type="text" id="email" placeholder="Введите email">
+            <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Ваш вопрос</label>
+            <textarea id="question" placeholder="Задайте ваш вопрос"></textarea>
+        </div>
+        <button class="btn-submit" id="submitBtn">Отправить заявку!</button>
+    </div>
+
+    <!-- Уведомление -->
+    <div class="notification" id="notification">
+        Заявка успешно отправлена!
+    </div>
+
+
+
+
+
+    <script src="dz.js"></script>
+</body>
+
+</html>

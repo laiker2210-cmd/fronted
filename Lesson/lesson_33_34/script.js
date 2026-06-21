@@ -39,6 +39,7 @@ window.addEventListener("click", function (event) {
 
 //------------------------------
 //<div class="box">
+//search
 
 /* let box = document.querySelector(".box");
 // let width = box.clientWidth; // с учетом отступа прокрутки
@@ -50,8 +51,8 @@ let height = box.scrollHeight; // высота с учетом прокрутк�
 
 console.log(width, height);
 
-let flag;
 let hh = box.offsetHeight;
+let flag;
 
 document.querySelector("button").addEventListener("click", function () {
     // if (!flag) {
@@ -59,15 +60,27 @@ document.querySelector("button").addEventListener("click", function () {
     //     flag = 0;
     // }else {
     //     box.style.height = hh + "px";
-        
+
     // }
     // flag = !flag;
+    //console.log(box.scrollTop);
+    // .getBoundingClientRect() - DOMRect - показал все координаты окна
+    //console.log(box.getBoundingClientRect().top); // строгое значение координат
+    // console.log(box.getBoundingClientRect());
+    // console.log("offetTop", box.offetTop);
 
-    console.log(box.scrollTop);
     
-})
+    if(!flag){
+        box.style.overflow = "hidden";
+    }else{
+        box.style.overflow = "";
+    }
+    flag = !flag;
 
-console.log(box.scrollHeight, box.offsetHeight); */
+
+}) */
+
+//console.log(box.scrollHeight, box.offsetHeight);
 
 //------------
 //   <div class="header">
@@ -84,6 +97,44 @@ function myFunction() {
 
     document.querySelector("img").style.transform = "translate("+ (document.documentElement.clientWidth - 94) * scrolled / 100 +"px, 0px)"
 } */
+
+
+//-------------------------
+// Лекция 34 продолжение
+// <button id="show">Показать окно</button>
+//влияние на документы и окна в другом окне
+
+let win = null;
+
+let open = document.querySelector("#show")
+open.addEventListener("click", function () {
+    //window.open("https://yandex.com");
+    win = window.open("str.html",
+        "new_window",
+        "width=420,height=220,left=200,top=200,resizable=yes"
+
+    );//вторым параметром даем имя новому окно
+    console.log(win);
+
+});
+//можем в этом же окне закрыть открытую вкладку или окно
+let cls = document.querySelector("#close");
+cls.addEventListener("click", function () {
+    if (typeof win == "object") {
+        win.close();
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
