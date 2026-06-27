@@ -66,6 +66,8 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
+//у меня есть начала кода, где была игра, там в случайном поле появлялся квадрат и нужно было на время нажимать на квадраты. хочу сделать другую игру по типу три в ряд. падают квадраты 
+
 function renderBox() {
     game.innerHTML = "";
     let box = document.createElement("div");
