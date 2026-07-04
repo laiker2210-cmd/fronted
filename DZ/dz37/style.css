@@ -1,0 +1,39 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 35px;
+    padding: 20px 5px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+div {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+div img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header10 img {
+    width: 250px;
+    height: auto;
+}

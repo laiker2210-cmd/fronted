@@ -213,7 +213,7 @@ console.log(task3.done); */
 
 
 //----------------------------------------------------------------------
-// <div id="hrader"></div>
+// <div id="header"></div>
 
 /* class Header {
     constructor(image, h1, h2) {
