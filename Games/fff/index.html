@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>квестовая фигня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <header>
+            <h1>🏰 Подземелье ЗабГУ</h1>
+            <div id="stats"></div>
+        </header>
+
+        <main>
+            <div id="story"></div>
+            <div id="choices"></div>
+            <div id="inventory"></div>
+        </main>
+
+        <footer>
+            <button id="restart-btn" onclick="game.restart()">🔄 Начать заново</button>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

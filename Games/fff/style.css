@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #e94560;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: rgba(233, 69, 96, 0.2);
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #e94560;
+}
+
+.stat-label {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#story {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    min-height: 100px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.choice-btn {
+    background: linear-gradient(135deg, #e94560 0%, #c73e54 100%);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.choice-btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.choice-btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#inventory {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#inventory h3 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+.item {
+    display: inline-block;
+    background: rgba(233, 69, 96, 0.3);
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+}
+
+#restart-btn {
+    background: #533483;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#restart-btn:hover {
+    background: #6a42a0;
+}
