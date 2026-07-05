@@ -284,7 +284,7 @@ header3.render("header-ext"); */
 
 //метод - .fillRect()
 
-const canvas = document.getElementById("test");//получили холст для рисования
+/* const canvas = document.getElementById("test");//получили холст для рисования
 const c = canvas.getContext("2d");
 
 //цвет заливки
@@ -431,6 +431,263 @@ c.fillRect(155, 206, 9, 2);
 
 //телевизор на стене(спросить можно ли воткнуть сюда видео)
 
-//кресло
+//кресло */
+
+//лекция 38
+
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+//цвет заливки
+c.fillStyle = "rgb(83, 56, 2)";
+
+c.fillRect(10, 10, 60, 50); //10/10 - отступ по краям - 60/50 = ширина/высота
+
+c.fillStyle = "#f60"
+c.fillRect(40, 50, 100, 90);
+
+c.setLineDash([15,5]); //пунктирный контур - длинна и растояние
+c.lineWidth = 4.5;//толшина контура
+c.strokeStyle = "#369"
+c.strokeRect(5, 5, 140, 140); //контур
+
+c.clearRect(30, 30, 50, 50);//вырезали квадрат */
+
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+c.fillStyle = "rgb(0, 0, 0)"; // черный цвет по умолчанию, можно убрать
+c.fillRect(20, 20, 160, 160);
+
+c.clearRect(50, 50, 100, 100);
+
+c.lineWidth = 4.5;
+c.strokeStyle = "rgb(0, 0, 0)"; // черный цвет по умолчанию, можно убрать
+c.strokeRect(60, 60, 80, 80); */
+
+//-----------------
+
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+c.beginPath();//открыли
+c.rect(30,180,100,90);//нужно открыть и закрыть
+c.closePath();// закрыли
+
+c.fillStyle = "yellow";// перекрасили
+c.strokeStyle = "brown";// цвет контура
+c.fill();//написали и появился в видимой части c.rect()
+c.stroke();// добавили контур
+
+c.clip();//обрезаои часть видимой области - проявился как маска по размерам первой фигуры и закрыл эту фигуру c.rect(10,200,140,90);
+//все что после невидно
+
+c.beginPath()
+c.rect(10,200,140,90);
+c.closePath();
+c.stroke(); */
+
+//-----------
+//треугольник
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+c.beginPath();
+c.moveTo(80,50);//х/у - начальная точка линии от края
+c.lineTo(100,80);//х/у - конечная точка
+c.lineTo(100,30);
+
+c.closePath();
+c.stroke();
+c.fillStyle = "yellow";
+c.fill(); */
+
+//-----------
+//окружности
+// const canvas = document.getElementById("test");//получили холст для рисования
+// const c = canvas.getContext("2d");
+
+// /* c.beginPath();
+// c.arc(200, 80, 40, 0, Math.PI * 2); // длинна от карая до центра, от верха до центра, радиус, начальный и конечный угол до арки
+
+// c.closePath();
+// c.fill(); */
+
+// //часть круга
+// c.beginPath();
+// c.moveTo(300, 80);// и тут важно
+// c.arc(300, 80, 40, 0, Math.PI / 2, true); //без true будет 1/4, с true 3/4
+// c.closePath();
+// c.stroke();
+
+// c.beginPath();
+// c.moveTo(310, 90);// а тут важно
+// c.arc(310, 90, 40, 0, Math.PI / 2, false); //без true будет 1/4, с true 3/4
+// c.closePath();
+// c.stroke();
+
+// //пол круга
+// c.beginPath();
+// c.moveTo(410, 90);//тут неважно, есть или нет 
+// c.arc(410, 90, 40, 0, Math.PI, false);//усли true то отзеркалит (или вторая половинка)
+// c.closePath();
+// c.stroke();
+
+// //кривые
+// c.beginPath();
+// c.moveTo(180, 220);//от и до по х
+// c.quadraticCurveTo(230, 160, 290, 220);// от х до у верх и от у вниз до клнечной точки х
+// //вытягивается по значениям выше, т.е. загругляется
+// c.closePath();
+// c.strokeStyle = "red";
+// c.stroke();
+
+// c.beginPath();
+// c.moveTo(180, 260);//длинна (от и до)
+// c.bezierCurveTo(240, 200, 220, 320, 290, 260); //вверх(2), вниз(2), вверх(2) до конечной точки moveTo - закруглило
+// c.strokeStyle = "red";
+// c.stroke();
+
+// //----------------------
+
+// c.fillStyle = "blue";//color
+// c.font = "30px Arial";//size and font-stail
+// c.fillText("Hello World", 160, 30); //text
+// c.strokeText("Hello World", 320, 30)// text contur
+
+// c.font = "30px Verdana";
+// c.fillStyle = "orange";
+// c.textAlign = "center";//центр типо
+
+// c.shadowOffsetX = 3;//в пикселях толщина тени / в право / можно -3, уйдет в лево
+// c.shadowOffsetY = 3;//в пикселях толщина тени / в низ / можно -3, уйдет в верх
+// c.shadowBlur = 3; //размытие тени на 3 пикселя
+// c.shadowColor = "#AAA";//цвет тени
+
+
+// //c.fillText("Hello World", 320, 60); //центр отностительно чегото
+// c.fillText("Hello World", canvas.width / 2, canvas.height / 2); //текст, ищем центр по длинне, отступ ро высоте(центр)
+
+//-----------------------------
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+let pic = new Image();
+pic.src = "https://images.icon-icons.com/2530/PNG/96/js_button_icon_151927.png";
+pic.addEventListener("load", function(){
+    c.drawImage(pic, 80, 100);
+
+    c.drawImage(pic, 180, 0, 300, 130)//[x,y,w,h]
+}) */
+
+// градиенты - динейный
+
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+//цвет градиента
+let gr = c.createLinearGradient(320, 0, 470, 0);
+gr.addColorStop(0, "red");
+gr.addColorStop(0.5, "blue");
+gr.addColorStop(1, "white");
+c.fillStyle = gr;
+
+c.fillRect(320, 170, 150, 60);
+//контур градиента
+let st = c.createLinearGradient(320, 0, 470, 0);
+st.addColorStop(0, "yellow");
+st.addColorStop(1, "orange");
+c.strokeStyle = st;
+c.lineWidth = 10;
+c.strokeRect(320, 170, 150, 60) */
+
+//гражиенты - радиальный
+
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+//прямоугольник
+let grd = c.createRadialGradient(400, 280, 5, 400, 270, 60); //x,y, радиус первой точки, координата, радиус второй точки
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "orange");
+c.fillStyle = grd;
+c.fillRect(320, 240, 150, 60); //фигура
+
+//тень
+c.shadowOffsetX = 10;
+c.shadowOffsetY = 10;
+c.shadowColor ="#0F0";
+c.shadowBlur = 10;
+
+// круг
+let gr = c.createRadialGradient(60, 60, 15, 75, 75, 75);
+gr.addColorStop(0, "#0F0");
+gr.addColorStop(1, "#0DA805");
+c.fillStyle = gr;
+
+c.beginPath();
+c.arc(75, 75, 75, 0, Math.PI * 2);
+c.closePath();
+c.fill(); */
+
+//-----------------------------------------------------
+
+/* const canvas = document.getElementById("test");//получили холст для рисования
+const c = canvas.getContext("2d");
+
+c.fillStyle = "brown";
+c.fillRect(50, 50, 100, 100);
+
+c.fillStyle = "orange";
+c.globalAlpha = 0.5;//прозрачность
+//c.translate(50, 50);//смещение
+//c.rotate(.52);//поворот
+c.scale(1.5, 1.5); //увеличили в полтора раза
+
+c.fillRect(50, 50, 100, 100); */
+
+//рисование мышью
+
+/* const canvas = document.getElementById("test");
+const c = canvas.getContext("2d");
+
+const w = canvas.width;
+const h = canvas.height;
+
+const mouse = { x: 0, y: 0 };
+let draw = false;
+
+//нажатие кнопки мыши
+canvas.addEventListener("mousedown", function (e) {
+    mouse.x = e.pageX - this.offsetLeft;
+    mouse.y = e.pageY - this.offsetTop;
+
+    draw = true;
+    c.beginPath();
+    c.moveTo(mouse.x, mouse.y)
+});
+
+//перемещение мыши
+canvas.addEventListener("mousemove", function (e) {
+    if (draw) {
+        mouse.x = e.pageX - this.offsetLeft;
+        mouse.y = e.pageY - this.offsetTop;
+        c.lineTo(mouse.x, mouse.y);
+        c.stroke();
+    }
+});
+
+//разжатие кнопки мыши
+canvas.addEventListener("mouseup", function (e) {
+    mouse.x = e.pageX - this.offsetLeft;
+    mouse.y = e.pageY - this.offsetTop;
+    c.lineTo(mouse.x, mouse.y);
+    c.stroke();
+    c.closePath();
+    draw = false;
+}); */
+
+
+
 
 
