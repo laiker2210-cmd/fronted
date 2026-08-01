@@ -36,23 +36,23 @@ class Game {
         "4": 1200
     }
 
-    score = 0;
-    lines = 0;
+    constructor() {
+        this.reset()
+    }
 
-    playfield = this.creatPlayfield() //игровое поле - высота и ширина
+    reset() {
+        this.score = 0;
+        this.lines = 0;
 
-    activePiece = this.createPiece()
-    //{
-    // x: 0,
-    // y: 0,
-    // blocks: [
-    //     [0, 1, 0],
-    //     [1, 1, 1],
-    //     [0, 0, 0]
-    // ]
-    //}
+        this.topOut = false;
 
-    nextPiece = this.createPiece()
+        this.playfield = this.creatPlayfield() //игровое поле - высота и ширина
+
+        this.activePiece = this.createPiece()
+        this.nextPiece = this.createPiece()
+    }
+
+
 
     getLevel() {
         //return Math.floor(this.lines * 0.1)
@@ -84,7 +84,8 @@ class Game {
             level: this.getLevel(),
             lines: this.lines,
             nextPiece: this.nextPiece,
-            playfield
+            playfield,
+            isGameOver: this.topOut
         }
 
     }
@@ -104,6 +105,10 @@ class Game {
     }
 
     moveIsDown() {//перемщение фигуры в низ
+        if (this.topOut) {
+            return
+        }
+
         this.activePiece.y++
 
         if (this.hasCollision()) {
@@ -112,6 +117,10 @@ class Game {
             const clearLines = this.clearLines()
             this.updateScore(clearLines)
             this.updatePiece()
+
+        }
+        if (this.hasCollision()) {
+            this.topOut = true // ?????????????
         }
     }
 
@@ -419,7 +428,7 @@ class View {
 
     }
 
-    renderStartScreen() {
+    renderStartScreen() {//стартовый экран
         this.context.fillStyle = "white"
         this.context.font = "18px Verdana"
         this.context.textAlign = "center"
@@ -456,41 +465,145 @@ class View {
 
 }
 
+class Controller {
+    constructor(game, view) {
+        this.game = game
+        this.view = view
+        this.intevalId = null
+        this.isPlaying = false
 
+
+
+        //document.addEventListener("keydown", event => this.handleKeyDown())
+        document.addEventListener("keydown", this.handleKeyDown.bind(this))
+        this.view.renderStartScreen()
+    }
+
+    play() {
+        this.isPlaying = true
+        this.startTimer()
+        this.updateView()
+    }
+
+    pause() {
+        this.isPlaying = false
+        this.stopTimer()
+        this.updateView()
+    }
+
+    reset() {
+        this.game.reset()
+        this.play()
+    }
+
+
+    updateView() {
+        const state = this.game.getState()
+
+        if (state.isGameOver) {
+            this.view.renderEndScreen(state)
+        } else if (!this.isPlaying) {
+            this.view.renderPauseScreen()
+        } else {
+            this.view.render(state)
+        }
+
+
+    }
+
+    startTimer() {
+        const speed = 1000 - this.game.getState().level * 100
+
+        if (!this.intevalId) {
+            this.intevalId = setInterval(() => {
+                this.update()
+            }, speed > 0 ? speed : 1000)
+
+        }
+    }
+
+    stopTimer() {
+
+
+        if (this.intevalId) {
+            clearInterval(this.intevalId)
+            this.intevalId = null
+        }
+    }
+
+    update() {
+        this.game.moveIsDown()
+        this.updateView()
+    }
+
+    handleKeyDown(event) {
+        const state = this.game.getState()
+        switch (event.which) { // keyCode или which - оба устарели и оба работают - альтернативы незнаю
+            case 13:
+                if (state.isGameOver) {
+                    this.reset()
+                } else if (this.isPlaying) {
+                    this.pause()
+                } else {
+                    this.play()
+                }
+                break
+
+            case 37:
+                this.game.moveIsLeft();
+                this.updateView()
+                break
+            case 38:
+                this.game.rotationPiece();
+                this.updateView()
+                break
+            case 39:
+                this.game.moveIsRight();
+                this.updateView()
+                break
+            case 40:
+                this.game.moveIsDown();
+                this.updateView()
+                break
+        }
+    }
+}
 
 
 const game = new Game(); //игровое поле
 const root = document.querySelector("#root");
 const view = new View(root, 480, 640, 20, 10);
+const controller = new Controller(game, view)
 
 //view.renderPlayfield(game.playfield);
 //console.log(game.playfield);
 
-document.addEventListener("keydown", event => {
-    switch (event.which) { // keyCode или which - оба устарели и оба работают - альтернативы незнаю
-        case 13:
-            view.render(game.getState())
-            break
-        case 37:
-            game.moveIsLeft();
-            view.render(game.getState())
-            break
-        case 38:
-            game.rotationPiece();
-            view.render(game.getState())
-            break
-        case 39:
-            game.moveIsRight();
-            view.render(game.getState())
-            break
-        case 40:
-            game.moveIsDown();
-            view.render(game.getState())
-            break
-    }
-})
+//document.addEventListener("keydown", event => {
+// switch (event.which) { // keyCode или which - оба устарели и оба работают - альтернативы незнаю
+//     case 13:
+//         view.render(game.getState())
+//         break
+//     case 37:
+//         game.moveIsLeft();
+//         view.render(game.getState())
+//         break
+//     case 38:
+//         game.rotationPiece();
+//         view.render(game.getState())
+//         break
+//     case 39:
+//         game.moveIsRight();
+//         view.render(game.getState())
+//         break
+//     case 40:
+//         game.moveIsDown();
+//         view.render(game.getState())
+//         break
+// }
+//})
 
-view.render(game.getState())
+//view.render(game.getState())
 // view.renderStartScreen(game.getState())
 // view.renderPauseScreen(game.getState())
 // view.renderEndScreen(game.getState())
+//раличие классов в игре, в ндном игрвое поле и событие, во втором, в основном внешний вид. можно жто сделать и в одном классе. будет еще один класс
