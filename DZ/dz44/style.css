@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.yellow{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #eaff5d;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    z-index: 1000;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    width: 400px;
+    z-index: 2000;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+}
