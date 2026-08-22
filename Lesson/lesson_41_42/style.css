@@ -1,0 +1,41 @@
+/* div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 500px;
+    height: 200px;
+    background: rgb(182, 85, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(182, 31, 5);
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+} */
+
+/* :root {
+    --c-color-lite: white;
+    --c-color-dark: black;
+
+    --c-color-text: var(--c-color-dark);
+    --c-color-bg: var(--c-color-lite);
+}
+
+html.is-dark-theme {
+    --c-color-text: var(--c-color-lite);
+    --c-color-bg: var(--c-color-dark);
+}
+
+body {
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--c-color-text);
+    background: var(--c-color-bg);
+} */

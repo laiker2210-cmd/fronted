@@ -123,7 +123,11 @@ function gameLoop() {
     snake.unshift(head);
 
     if (head.x === foot.x && head.y === foot.y) {
-        foot = getRandomFootPosition();
+        //foot = getRandomFootPosition();
+        do {
+            foot = getRandomFootPosition();
+        } while (snake.some(segment => segment.x === foot.x && segment.y === foot.y));
+
         score++;
         scoreEl.textContent = `Счет: ${score}`;
         if (gameSpeed > 50) {
