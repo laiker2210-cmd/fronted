@@ -1,11 +1,10 @@
 {
-	"full_name" : "Компьютерная академия ШАГ Россия",
+	"full_name" : "Компьютерная академия ТОР Россия",
 	"title" : "IT образование для детей и взрослых",
 	"links" : [
-			{ "site"     : "https://itstep.org" },
-			{ "facebook" : "https://www.facebook.com/itstep.russia.msk/" },
-			{ "vk"  : "https://vk.com/rusitstep" },
-			{ "instagram"  : "https://www.instagram.com/msk_itstep_org_ru/" },
-			{ "telegram"  : "https://t-do.ru/Itstep_russia" }
+			{ "site"     : "https://online.top-academy.ru" },		
+			{ "vk"  : "https://vk.ru/itacademy_top" },
+			{ "youtube"  : "https://www.youtube.com/@top-academy" },
+			{ "telegram"  : "https://t.me/itacademy_top" }
 		]
 }

@@ -706,18 +706,189 @@ const age25 = byAge.get(25);
 console.log(age25); */
 
 
-let items = [1,2,3,4,5,6];
+/* let items = [1,2,3,4,5,6];
 
 const enumerate = Map.groupBy(items, n => n %2 === 0 ? "even" : "odd")
-console.log(enumerate);
+console.log(enumerate); */
 
 //сделать массив строк и эдементов, и разделить по ключам, строки и числв(объекты)
 
 
-let item = [1,"2",3,"4",5,"6"];
+/* let item = [1,"2",3,"4",5,"6"];
 
 const mas = Map.groupBy(item, n => typeof n === "string" ? "string" : "number")
-console.log(mas);
+console.log(mas); */
+
+
+//продолжение
+//Map объектов
+
+/* let obj = {
+    name: "Сергей",
+    age: 30
+}
+
+console.log(Object.entries(obj));
+
+let map = new Map(Object.entries(obj))
+document.writeln(map.get("name"));
+console.log(map);
+
+//.fromEntries -
+let obj1 = Object.fromEntries(map) // - получаем объект
+console.log(obj1);  */
+
+// срвнение время работы объекта и Map
+
+/* const myObj = {};
+
+let start1 = new Date().getTime();
+for (let i = 0; i <= 10000000; i++) {
+    myObj[i] = i;
+    delete myObj[i]
+}
+console.log(new Date().getTime() - start1);
+
+//работает почти в 2.5 раза быстрее чем при работе с Object по дополнению и удалению данных
+const myMap = new Map();
+let start2 = new Date().getTime();
+for (let i = 0; i <= 10000000; i++) {
+    myMap.set(i, i);
+    myMap.delete(i)
+}
+console.log(new Date().getTime() - start2); */
+
+
+//----------------------------
+// new Set();
+// обращение по индекчу не работает. есть тользко значение, и родобие индексов. хранит набор только уникальных значений, отбрасывает повторяющие элементы
+/* const set = new Set();
+set.add(5);
+set.add(9);
+console.log(set);
+console.log(set.size); */
+
+//---
+
+//const set = new Set([1, 2, 3, 4, 4, 5, 5, 6, 6]);
+//console.log(set); //Set избавился от дубликатов, оставил толко уникальные значение.
+//console.log(set.has(7)); //булиевый ответ
+//console.log(set.has(4));
+//set.delete(4); //удалили 4
+//console.log(set); // проверили удаление
+//set.clear(); //очистили
+//console.log(set); // проверили
+
+// проверка цикла для Set
+
+// for (let elem of set) {
+//     console.log(elem);
+// }
+
+// forEach - работает тоже, как и forOf
+//set.forEach(value => document.writeln(value + "<br>"));
+
+//-----------
+
+//let arr = [...set];//получили масив, перенеся set в массив через деструктуризацию
+///console.log(arr);
+
+//let arr1 = Array.from(set); //получили масив, перенеся set в массив через метод Array.from
+//console.log(arr1);
+
+//обратное преобразование массива в set
+
+// let mas = [5,9,8,6,5,9,6,8];
+// let set = new Set(mas)
+// console.log(set);
+// // пример, чтобы не искать дубликаты в массиве, можем преобразовать в сет и обратно.
+// let mas1 = [...set];
+// console.log(mas1);
+
+// но можно быстрее это сделать, одной строкой
+// let mas = [5,9,8,6,5,9,6,8];
+// console.log(mas);
+// let mas1 = [...new Set(mas)];
+// console.log(mas1);
+
+//----------------------------------------------
+//теперь пример применения, отслеживание уникальных посетителей на сайте за 1 день
+
+/* class VisitorTrecker {
+    constructor() {
+        this.visitors = new Set()
+        this.totatVisits = 0
+    }
+
+    registerVisit(userId) {
+        this.totatVisits++
+        this.visitors.add(userId)
+    }
+
+    getUniqueCount() {
+        return this.visitors.size
+    }
+
+    getNewVisitorPercent() {
+        if (this.totatVisits === 0) {
+            return 0
+        }
+        return (this.visitors.size / this.totatVisits) * 100
+    }
+}
+
+const tracker = new VisitorTrecker();
+
+tracker.registerVisit("user_1");
+tracker.registerVisit("user_2");
+tracker.registerVisit("user_1");
+tracker.registerVisit("user_3");
+tracker.registerVisit("user_2");
+
+console.log(`
+    Всего визитов: ${tracker.totatVisits}. 
+    Всего уникальных посетителей: ${tracker.getUniqueCount()}.
+    Процент новых посетителей: ${tracker.getNewVisitorPercent()}%.
+`); */
+
+//-----------------------------
+//множества
+
+/* const one = new Set(["first", "second", "third", "fourth"]);
+const two = new Set(["second", "fifth", "fourth", "sixth"]);
+
+//объеденямим несколько сетов
+const uni = one.union(two);//объеденили 2 Set
+//console.log(uni);
+console.log(...[uni]);//объеденили 2 Set и выведи одним массивом
+
+//.intersection
+const both = one.intersection(two);
+console.log(both); //вывели исключения
+console.log(...[both]); //вывели исключения в массиве
+
+//вычитает их первого сета второй сет,
+const onlyOne = one.difference(two);
+const onlyTwo = two.difference(one);
+console.log(onlyOne); // можно вывести как массив
+console.log(onlyTwo); // можно вывести как массив
+
+// не переносит в новый сет повторяющие элеименты
+const unique = one.symmetricDifference(two);
+console.log(unique);
+console.log(...[unique]); */
+
+
+//----------------------------------------------------------
+//НОВАЯ ТЕМА
+//AJAX - Asynchronous JavaScript And XML(JSON)
+
+
+
+
+
+
+
 
 
 

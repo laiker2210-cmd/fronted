@@ -3,61 +3,61 @@
     {
       "name": "John",
       "surname": "Smith",
-      "sex": "male",
+      "pol": "male",
       "age": 46,
-      "photo": "https://static-29.sinclairstoryline.com/resources/media/36e828c4-51a0-4b8a-4991-2cfa7d8ae1d1-largeScale_AlanMatthews2020_beard_webphoto320x4201.png?1603404381689"
+      "photo": "https://s1.fotokto.ru/photo/full/871/8718115.jpg"
     },
     {
       "name": "Angela",
       "surname": "Whinston",
-      "sex": "female",
+      "pol": "female",
       "age": 31,
-      "photo": "https://static-26.sinclairstoryline.com/resources/media/4d05e5c9-9cb4-49c5-44f0-875026cfdd91-largeScale_GenevieveMelzer2020_webphoto320x4201.png?1603403099107"
+      "photo": "https://s1.fotokto.ru/photo/full/871/8717646.jpg"
     },
     {
       "name": "Alex",
       "surname": "Solberry",
-      "sex": "male",
+      "pol": "male",
       "age": 35,
-      "photo": "https://static-30.sinclairstoryline.com/resources/media/887b24c4-ce42-41ae-1102-13241f193c17-887b24c4ce4241ae110213241f193c17rendition_0_SThurman320x420.jpg?1519072704688"
+      "photo": "https://s3.fotokto.ru/photo/full/870/8709187.jpg"
     },
     {
       "name": "Anna",
       "surname": "Rayan",
-      "sex": "female",
+      "pol": "female",
       "age": 33,
-      "photo": "https://static-25.sinclairstoryline.com/resources/media/3f1ef009-5f3d-4be8-6f0e-6ab0862f00b5-largeScale_KendallBartley2020_webphoto320x4201.png?1603404656511"
+      "photo": "https://s3.fotokto.ru/photo/full/867/8679857.jpg"
     },
     {
       "name": "Michael",
       "surname": "Dobkin",
-      "sex": "male",
+      "pol": "male",
       "age": 30,
-      "photo": "https://static-29.sinclairstoryline.com/resources/media/5a1c39f2-a52f-4502-029d-23836f6bfd5a-5a1c39f2a52f4502029d23836f6bfd5arendition_0_HHerrera320x420.jpg?1457454255155"
+      "photo": "https://s3.fotokto.ru/photo/full/870/8702122.jpg"
     }
 	,
     {
       "name": "Marina",
       "surname": "Bartley",
-      "sex": "female",
+      "pol": "female",
       "age": 23,
-      "photo": "https://static-25.sinclairstoryline.com/resources/media/8547e9d9-9d18-4ca4-6413-bb2f69273cb3-largeScale_Ahtra_webphoto320x420.png?1606180951491"
+      "photo": "https://s1.fotokto.ru/photo/full/871/8710257.jpg"
     }
 	,
     {
       "name": "Amanda",
       "surname": "Dixon",
-      "sex": "female",
+      "pol": "female",
       "age": 23,
-      "photo": "https://static-16.sinclairstoryline.com/resources/media/819cb586-bf1c-4ea0-0565-5a6fff44f8e4-largeScale_negrete.png?1603403777274"
+      "photo": "https://s3.fotokto.ru/photo/full/871/8710291.jpg"
     }
 	,
     {
       "name": "Billy",
       "surname": "Rosen",
-      "sex": "male",
+      "pol": "male",
       "age": 30,
-      "photo": "https://static-34.sinclairstoryline.com/resources/media/aafc5703-b96d-46ba-9749-f019887aa71f-largeScale_BillyFloyd2020_webphoto320x420.png?1603402911142"
+      "photo": "https://s4.fotokto.ru/photo/full/742/7425822.jpg"
     }
   ]
 }
