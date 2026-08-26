@@ -1,1 +1,0 @@
-Написать функцию, которая преобразует свойство стиля CSS в стиль JavaScript (например: background-color преобразует в backgroundColor
