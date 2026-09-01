@@ -812,7 +812,7 @@ if (isNaN(student) || student < 0 || student > 99) {
 //----------------------
 //Задача 1: «Детектор типов с подвохом»
 
-let a = "5";
+/* let a = "5";
 let b = 5;
 let c = true;
 let d = null;
@@ -837,7 +837,332 @@ console.log(`КАРТА ПЕРСОНАЖА
 Имя: ${name}
 Фракция: ${fraction}
 Здоровье: ${startHp}
-Статус: ${hp > 50 ? "🟢 Жив" : "🟡 Ранен "} ${hp <= 20 }`)
+Статус: ${hp > 50 ? "🟢 Жив" : "🟡 Ранен "} ${hp <= 20 }`) */
+
+//-----------------------------------------------------------------
+
+/* let a = +prompt("Ведите первое число");
+let b = +prompt("Ведите второе число");
+let c = +prompt("Ведите третье число");
+let count = 0;
+
+let sum = 0;
+//let pr = a * b * c;
+let pr = 1;
+
+
+if (a > 0) {
+    sum += a;
+    pr *= a;
+    count++;
+}
+if (b > 0) {
+    sum += b;
+    pr *= b;
+    count++;
+}
+if (c > 0) {
+    sum += c;
+    pr *= c;
+    count++;
+}
+
+if (count === 0) {
+    console.log("Пользователь не ввел числа");
+
+} else {
+    let sr = sum / count;
+    console.log("Сумма чисел: ", sum);
+    console.log("Произведение чисел: ", pr);
+    console.log("Среднее арифметическое число: ", sr);
+} */
+
+//------------------
+// let a = 21.84455654
+// console.log(Number(a).toFixed(3));
+// alert
+// prompt
+// confirm
+// parseInt
+// parseFloat
+// a.toFixed
+// typeof
+//--------------------------------
+
+/* console.log("Привет".length);
+console.log("Привет"[0]);
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean("false"));
+
+let pas = prompt("Введите пароль", "secret123"); */
+//------------------------
+
+/* let login = prompt("Введите логин");
+let pas = prompt("Введите пароль", "secret123");
+
+if (login !== "" && login !== null && pas === "secret123") {
+    console.log("Добро пожаловать!");
+} else if (login === "" || login === null && pas === "" || pas === null) {
+    console.log("Ошибка: вы не ввели логин или пароль!");
+} else {
+    console.log("Ошибка: неверный пароль!");
+} */
+//------------------------------------
+
+//Марафон
+// Задача 1: Переменные и константы (Легкая)
+/* const BASE_RATE = 5;
+let balance = 10000;
+BASE_RATE = 10; */ //TypeError нельзя поменять обычное значение константы.
+
+//Задача 2: Преобразование типов и NaN (Средняя)
+/* let str = prompt("Введите число");// но иожно просто поставить +, но  ву словиях ьыло преобразование
+let num = +str;//была строка, стало число, через переменную
+if(Number.isNaN(num)){
+    console.log("Это не число!");
+}else{
+    console.log(num ** num);  
+} */
+
+// Задача 3: Строки и индексация (Легкая)
+/* let word = "JavaScript";
+console.log(word[0]);
+console.log(word[word.length - 1]);
+console.log(word.length); */
+
+//Задача 4: Truthy/Falsy и логика (Средняя)
+/* let username;
+let age;
+let email;
+username = "Алексей";
+age = 0;
+email = "";
+if (username && age && email) {
+    console.log("Пользователь валиден");
+} else {
+    console.log("Не все поля заполнены");//потому что 0 и пустая строка false
+} */
+
+//Задача 5: Валидация ввода с prompt (Сложная)
+/* let num1 = +prompt("Введите первое число");
+let num2 = +prompt("Введите второе число");
+let sumb = prompt("Введите математический символ: + - * /");
+if(Number.isNaN(num1) || Number.isNaN(num2)){
+    console.log("Введите корректные числа");
+}else if(sumb === "/" && num2 === 0){
+    console.log("Деление на ноль!");
+}else if(sumb !== "+" && sumb !== "-" && sumb !== "*" && sumb !== "/"){
+console.log("Неизвестная операция");
+}else if(sumb === "+"){
+    console.log(`Результат: ${num1 + num2}`);
+}else if(sumb === "-"){
+    console.log(`Результат: ${num1 - num2}`);
+}else if(sumb === "*"){
+    console.log(`Результат: ${num1 * num2}`);
+}else if(sumb === "/"){
+    console.log(`Результат: ${num1 / num2}`);
+} */
+
+//Задача 6: Комплексная задача — "Банковский счет" (Сложная)
+
+/* let balance = 10000;
+let plus = +prompt("На какую сумму вы пополнили счет?");
+let minus = +prompt("Какую сумму вы сняли со счета?");
+
+//проверка корректности ввода
+if (Number.isNaN(plus) || Number.isNaN(minus)) {
+    console.log("Введите корректное число");
+} else {
+
+    // пополнение баланса
+    if (plus > 0) {
+        balance = balance + plus;
+        console.log(balance); // вывод в консоль для логирования
+    }
+
+    if (minus > balance) {
+        console.log("Недостаточно средств"); // вывод в консоль для логирования
+        alert(`Недостаточно средств: ваш бананс ${balance}, вам не хватает ${minus - balance}`); //вывод пользователю
+    } else if (minus > 0) {
+        balance = balance - minus;
+        console.log(balance); // вывод в консоль для логирования
+    }
+
+    //вывод баланса для поьзователя
+    alert(`Ваш баланс: ${balance}`);
+} */
+
+//Задача 7: Бонусная задача с подвохом (Очень сложная)
+
+/* let a = "5";
+let b = 5;
+
+if (a == b) {
+    console.log("Равны");// будет этот, нет проверки на тип
+} else {
+    console.log("Не равны");
+}
+
+if (a === b) {
+    console.log("Строго равны");
+} else {
+    console.log("Строго не равны");// будет этот, есть проверка
+}
+
+let c = a + b; // 55 - конкатенация
+let d = a - b; // 0 - при минусе работает нормально
+
+console.log(`c = ${c}, d = ${d}`); */
+
+// марафон 2
+//Задача 1: "Банковский рефакторинг" (Найди и исправь 4 ошибки)
+
+/* let pin = prompt("Введите пин-код");// преобразуем в число
+let amount = +prompt("Введите сумму снятия");// преобразуем в число
+//проверка корректности ввода
+if (Number.isNaN(pin)) {
+    console.log("Пин-код должен быть числом");
+    return;
+}
+//проверка корректности ввода
+if (Number.isNaN(amount)) {
+    console.log("Введите корректное число");
+    return;
+}
+//проверка пин-кода
+if (pin !== 1234) {
+    console.log("Неверный пин-код! Пожалуйства попробуйте ввести еще раз.");
+    return;
+}
+//проверка суммы
+if (amount <= 0) {
+    console.log("Ошибка: сумма должна быть больше 0");
+}
+// когда все ок
+console.log("Снимаем: " + amount); */
+
+//  Задача 2: "Валидация имени героя" (Строки + Логика)
+
+/* let names = prompt("Введите имя");
+if (names === null || names === "") {//не решает проблему несколький пробелов
+    console.log("Ошибка: пустая строка");
+}
+else if (names === "admin" || names === "moderator") {
+    console.log("Ошибка: это имя зарезервировано");
+}
+else if (names.length < 3) {
+    console.log("Ошибка: имя слишком короткое");
+}
+else if (names.length > 12) {
+    console.log("Ошибка: имя слишком длинное");
+}
+else {
+    alert(`Имя принято: ${names}`)
+} */
+
+//Задача 3: "Логическая ловушка" (Только предсказание)
+
+/* console.log(result); // 0 так как x false, переходим к блоку И получаем True на y и сразу выводит, так как взял тольео превое значение
+*/
+
+// Задача 4: "Магия унарного плюса" (Подвох)
+/* console.log(+"  42  ");       // Вариант А - 42
+console.log(+"42px");         // Вариант Б - NaN так как цифры и буквы не получиться преобразовать в число
+console.log(+true);           // Вариант В - 1
+console.log(+false);          // Вариант Г - 0
+console.log(+null);           // Вариант Д - 0
+console.log(+undefined);      // Вариант - NaN */
+
+// Задача 5: "Финальный босс марафона" (Комплексная)
+/* let playerBalance = 500;
+let itemPrice = 150;
+let coll = +prompt("Сколько предметов вы хотите купить?");
+if (Number.isNaN(coll)) {
+    console.log("Введите корректное число");
+    console.log("Покупка отменена");
+}
+else if (coll <= 0) {
+    console.log("Покупка отменена или введено 0");
+}
+else if (coll % 1 !== 0) {
+    console.log("Введите целое число");
+}
+else if (itemPrice * coll > playerBalance) {
+    let neHvataet = itemPrice * coll - playerBalance;
+    console.log(`Недостаточно средств. Вам не хватает ${neHvataet}`);
+}
+else{
+    playerBalance = playerBalance - itemPrice * coll
+    console.log(`Куплено! Остаток на счету: ${playerBalance}`);
+} */
+
+//марафон 3
+
+//Задача 6: "Ловушка typeof" (Только предсказание)
+/* console.log(typeof 42); //число
+console.log(typeof "42"); // строка
+console.log(typeof true); // булиан
+console.log(typeof undefined); // не определено (undefined)
+console.log(typeof null);       // объект историческая ошибка
+console.log(typeof typeof 42);  // строка, потому что всегда возвращает строку, первый возврат "number"  потом проверяем тип уже "number" и получаем "string" */
+
+//Задача 7: "Умное присваивание" (Short-circuit на практике)
+/* let clientType = "regular"; // или "vip"
+let defaultCommission = 0; // может быть undefined
+
+let finalCommission = clientType === "vip" 
+? 0
+: (defaultCommission ?? 1.5);
+console.log(`Комиссия: ${finalCommission}%`); */
+
+//Задача 8: "Строковая математика" (Предсказание)
+/* let a = "10" - 2; //8
+let b = "10" + 2;  //102 - только тут конкатенция, в остнольном былоя неявное преобразование. + работает и как математический опрератор или склеивает строки
+let c = "10" - "2"; //8
+let d = "10" * "2"; // 20
+let e = "10" / "2"; // 5
+let f = "10" % "3"; // 1
+console.log(a, b, c, d, e, f); */
+
+// Задача 9: "Финальный рефакторинг игры"
+
+/* let playerHealth = 100;
+let damade = +prompt("Введите урон:");
+
+if (Number.isNaN(damade)) {
+    damade = 0;
+}else if((playerHealth - damade) <= 0 ){
+console.log("Здоровье:", 0);
+
+}
+else{
+    playerHealth = playerHealth - damade
+    console.log("Здоровье:", playerHealth); 
+} */
+//Твое первое задание на День 5 (Без Math, только цикл и то, что мы знаем):
+
+let correctPin = "777";
+let flag = false;
+
+for (let i = 0; i < 3; i++) {
+    let vvod = prompt(`Введите пароль. Попытка ${i + 1} из 3.`);
+
+    if (vvod === correctPin) {
+        flag = true;
+        console.log("Доступ разрешен!");
+        alert("Доступ разрешен!");
+        break
+    }
+}
+if (flag === false) {
+    console.log("Аккаунт заблокирован");
+    alert("Аккаунт заблокирован");
+}
+
+
+
+
 
 
 
