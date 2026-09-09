@@ -1142,7 +1142,7 @@ else{
 } */
 //Твое первое задание на День 5 (Без Math, только цикл и то, что мы знаем):
 
-let correctPin = "777";
+/* let correctPin = "777";
 let flag = false;
 
 for (let i = 0; i < 3; i++) {
@@ -1158,16 +1158,79 @@ for (let i = 0; i < 3; i++) {
 if (flag === false) {
     console.log("Аккаунт заблокирован");
     alert("Аккаунт заблокирован");
+} */
+//---------------
+
+/* let a = 1;
+let b = {toString(){return "1"}}
+let c = 1;
+
+console.log(a + b + c); */
+
+/* function f(a, b) {
+    alert(a + b);
 }
+f(3, 4, 2) */
+
+/* let a = [0,1,2];
+a[10] = 10;
+console.log(a.length); */
+
+/* let a = 5
+let b = 10
+alert(a) */
+
+// console.log(1232 + 45 * 3 - 32 / 8);
+
+/* console.log(0);
+setTimeout(function () { console.log(1); }, 1000)
+setTimeout(function () { console.log(2); }, 0)
+console.log(3); */
+
+/* let a = 1;
+function func(){
+    a = 10;
+}
+func();
+alert(a) */
+
+/* let arr = [];
+arr[1] = 5;
+arr[5] = 7;
+console.log(arr.length); */
+
+/* let hello = 1;
+let Hello = 1;
+console.log(hello);
+console.log(Hello); */
+
+/* function ch(){
+    j = 3;
+}
+let j = 2;
+ch();
+alert(j) */
+
+/* let obj = { '1': 0, 1: 1, 9: 2 }
+alert(obj['1']);
+console.log(obj['1']); */
 
 
+/* 
+document.form1.text[1].style.background = "silver"; */
+
+/* alert('1'[0]) */
 
 
+/* alert(' Hello, "Ann" ');
+alert(" Hello ” + ",  'Ann' ");
+alert(" Hello, \"Ann\' ");
+alert(" Hello, 'Ann' ");
+alert(" Hello, "Ann" "); */
 
+/* let x = 5
+alert(x++) */
 
-
-
-
-
-
-
+document.querySelector("#name").oninput = function () {
+    console.log("Значение изменилось:", this.value);
+};
