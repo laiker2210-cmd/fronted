@@ -1,0 +1,25 @@
+#create-react-app
+
+- запуск React в новой папке
+npx create-react-app .
+- запуск React в папке которой уже есть 
+npx create-react-app my_app
+
+
+- запуск
+npm start
+- остановка терминала
+Crtl + C
+
+
+
+
+create-react-app официально устарел (даже сама команда React Team не рекомендует его с 2023 года). 
+Для новых проектов используйте Vite — он быстрее в 10 раз и современнее:
+
+# Современный способ создать React-проект:
+npm create vite@latest my_app -- --template react
+
+cd my_app
+npm install
+npm run dev

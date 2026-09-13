@@ -1,0 +1,63 @@
+{
+  "people": [
+    {
+      "name": "John",
+      "surname": "Smith",
+      "pol": "male",
+      "age": 46,
+      "photo": "https://s1.fotokto.ru/photo/full/871/8718115.jpg"
+    },
+    {
+      "name": "Angela",
+      "surname": "Whinston",
+      "pol": "female",
+      "age": 31,
+      "photo": "https://s1.fotokto.ru/photo/full/871/8717646.jpg"
+    },
+    {
+      "name": "Alex",
+      "surname": "Solberry",
+      "pol": "male",
+      "age": 35,
+      "photo": "https://s3.fotokto.ru/photo/full/870/8709187.jpg"
+    },
+    {
+      "name": "Anna",
+      "surname": "Rayan",
+      "pol": "female",
+      "age": 33,
+      "photo": "https://s3.fotokto.ru/photo/full/867/8679857.jpg"
+    },
+    {
+      "name": "Michael",
+      "surname": "Dobkin",
+      "pol": "male",
+      "age": 30,
+      "photo": "https://s3.fotokto.ru/photo/full/870/8702122.jpg"
+    }
+	,
+    {
+      "name": "Marina",
+      "surname": "Bartley",
+      "pol": "female",
+      "age": 23,
+      "photo": "https://s1.fotokto.ru/photo/full/871/8710257.jpg"
+    }
+	,
+    {
+      "name": "Amanda",
+      "surname": "Dixon",
+      "pol": "female",
+      "age": 23,
+      "photo": "https://s3.fotokto.ru/photo/full/871/8710291.jpg"
+    }
+	,
+    {
+      "name": "Billy",
+      "surname": "Rosen",
+      "pol": "male",
+      "age": 30,
+      "photo": "https://s4.fotokto.ru/photo/full/742/7425822.jpg"
+    }
+  ]
+}
