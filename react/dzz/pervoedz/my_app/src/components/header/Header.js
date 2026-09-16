@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1>Мастерская Тайга: ножи ручной работы</h1>
+            <h1>Мастерская Тайга: <br/>ножи ручной работы</h1>
         </header>
     )
 }

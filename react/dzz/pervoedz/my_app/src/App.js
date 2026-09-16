@@ -1,10 +1,16 @@
-import Header from './Header';
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
 import './App.css';
 
-function App() {
+function App(props) {
+
+let {navigation} = props;
+
   return (
     <div className="App">
-      <Header />
+      <Nav navigation={navigation}/>
+      <Header/>
+      
     </div>
   );
 }
