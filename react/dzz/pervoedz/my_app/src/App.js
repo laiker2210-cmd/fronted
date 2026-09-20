@@ -7,7 +7,7 @@ function App(props) {
 let {navigation} = props;
 
   return (
-    <div className="App">
+    <div className='container'>
       <Nav navigation={navigation}/>
       <Header/>
       
