@@ -1,16 +1,115 @@
-nav ul {
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
     display: flex;
-    justify-content: space-around;
-    font-family: sans-serif;
-    font-size: calc(10px + 1vmin);
-    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
     background: rgb(0, 0, 0);
-    padding: 20px 0;
-    margin: 0;
+    padding: 14px 24px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
-nav a {
+.nav-list {
+    display: flex;
+    gap: calc(12px + 1vmin);
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    font-size: calc(10px + 1vmin);
     text-decoration: none;
     color: rgba(255, 255, 255, 0.712);
-    /* font-family:none ; */
+    transition: color 0.2s;
+}
+
+.nav-list a:hover {
+    color: #ffffff;
+}
+
+.nav-svaz {
+    font: inherit;
+    font-size: calc(10px + 1vmin);
+    font-weight: bold;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.712);
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-svazcta:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* @media (max-width: 640px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} */
+
+.nav__burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav__burger span {
+        width: 26px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 2px;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+
+    .nav__burger--open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav__burger--open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav__burger--open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list--open {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background: rgb(0, 0, 0);
+        padding: 16px 24px;
+    }
 }

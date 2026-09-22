@@ -1,18 +1,20 @@
-import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
+import Hero from './components/hero/Hero';
+import Catalog from './components/catalog/Catalog';
+import { NavLinks } from './data/NavLinks';
+import { knives } from './data/knives';
 import './App.css';
 
-function App(props) {
-
-let {navigation} = props;
-
-  return (
-    <div className='container'>
-      <Nav navigation={navigation}/>
-      <Header/>
-      
-    </div>
-  );
+function App() {
+    return (
+        <>
+            <Nav links={NavLinks} />
+            <main>
+                <Hero />
+                <Catalog knives={knives} />
+            </main>
+        </>
+    );
 }
 
 export default App;

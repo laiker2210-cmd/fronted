@@ -1,9 +1,9 @@
 import logo from './headerImg.jpeg';
-import './Header.css';
+import './Hero.css';
 
-function Header() {
+function Hero() {
     return (
-        <header className="App-header">
+        <header className="App-header container">
 
             <img src={logo} className="App-logo" alt="logo" />
             <h1>Мастерская Тайга: <br />ножи ручной работы</h1>
@@ -13,4 +13,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Hero;
