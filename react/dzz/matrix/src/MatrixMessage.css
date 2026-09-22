@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.matrix-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(0, 255, 65, 0.08),
+            transparent 35%),
+        #000;
+}
+
+.matrix-console {
+    position: relative;
+
+    box-sizing: border-box;
+    width: min(90vw, 900px);
+    height: 220px;
+
+    padding: 30px 40px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: clamp(20px, 3vw, 38px);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #00ff41;
+
+    background: rgba(0, 0, 0, 0.88);
+    border: 1px solid rgba(0, 255, 65, 0.35);
+    border-radius: 10px;
+
+    text-shadow:
+        0 0 6px rgba(0, 255, 65, 0.9),
+        0 0 25px rgba(0, 255, 65, 0.35);
+
+    box-shadow:
+        0 0 40px rgba(0, 255, 65, 0.12),
+        inset 0 0 30px rgba(0, 255, 65, 0.05);
+}
+
+.matrix-console::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: repeating-linear-gradient(to bottom,
+            rgba(0, 255, 65, 0.06) 0px,
+            rgba(0, 255, 65, 0.06) 1px,
+            transparent 1px,
+            transparent 3px);
+}
+
+.matrix-line {
+    width: 100%;
+    min-height: 1.6em;
+}
+
+.matrix-text {
+    margin-right: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.matrix-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.15em;
+    vertical-align: -0.25em;
+
+    background-color: #00ff41;
+
+    box-shadow:
+        0 0 6px rgba(0, 255, 65, 0.9),
+        0 0 18px rgba(0, 255, 65, 0.35);
+
+    animation: cursor-blink 0.8s steps(1, end) infinite;
+}
+
+@keyframes cursor-blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
