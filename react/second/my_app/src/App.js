@@ -2,10 +2,10 @@ import React from 'react';
 // import Hello from './Hello'
 // import Length from './Length'
 // import Form from './Form'
-// import Range from './Range'
+import Range from './Range'
 // import Posts from './Posts'
-import Test from './Test'
-import User from './User'
+//import Test from './Test'
+//import User from './User'
 import './App.css';
 
 class App extends React.Component {
@@ -29,16 +29,17 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <button onClick={() => this.setState({ show: !this.state.show })}>User</button>
-        {this.state.show ? <User /> : null}
-        <Test />
+        {/* <button onClick={() => this.setState({ show: !this.state.show })}>User</button>
+        {this.state.show ? <User /> : null} */}
 
+        <Range />
         {/* 
+        <Test />
         <Posts posts={posts} removePost={this.removePost} />
         <Hello />
         <Length />
         <Form />
-        <Range /> */}
+         */}
 
       </div>
     );
