@@ -46,15 +46,15 @@ class Search extends React.Component {
         let limit = 10;
         let totalPage = Math.ceil(this.props.totalCount / limit);
 
-        /* let num = [];
-        for (let i = 1; i <= totalPage; i++) {
-            num.push(i)
-        } */
+        //  /* let num = [];
+        //  for (let i = 1; i <= totalPage; i++) {
+        //      num.push(i)
+        // } */
 
         //10 страниц 
         //спросить как сделать их динамическими всегда 10 но чтобы листались сами при нажатии на кнопку страницы и через точки добавить последнюю с реверсом
-        let startPage = Math.floor((this.state.page - 1) / 10) * 10 + 1;
-        let endPage = Math.min(startPage + 9, totalPage);
+        let startPage = Math.floor((this.state.page -0));
+        let endPage = Math.min(startPage + limit - 1, totalPage);
 
         let num = [];
         for (let i = startPage; i <= endPage; i++) {
@@ -94,7 +94,10 @@ class Search extends React.Component {
                     </label>
                 </div>
                 {/* <div className="navigation">
-                    <button className="btn" onClick={this.prevPage} style={{ opacity: this.state.page === 1 ? ".5" : "1" }}>Prev</button>
+                    <button className="btn" 
+                    onClick={this.prevPage} 
+                    style={{ opacity: this.state.page === 1 ? ".5" : "1" }}>
+                    Prev</button>
 
                     <div className="items">
                         {
@@ -110,8 +113,9 @@ class Search extends React.Component {
                     <button
                         className="btn"
                         onClick={this.prevPage}
-                        style={{ opacity: this.state.page === 1 ? ".5" : "1" }}
                         disabled={this.state.page === 1}
+                        style={{ opacity: this.state.page <= totalPage ? ".5" : "1" }}
+                        
                     >Prev</button>
 
                     <div className="items">
