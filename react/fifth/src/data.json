@@ -1,0 +1,203 @@
+{
+    "categories": [
+        {
+            "name": "Все"
+        },
+        {
+            "name": "Природа"
+        },
+        {
+            "name": "Архитектура"
+        },
+        {
+            "name": "Вода"
+        },
+        {
+            "name": "Фауна"
+        }
+    ],
+    "collections": [
+        {
+            "category": 1,
+            "name": "Отдых на природе",
+            "photos": [
+                {
+                    "original":"https://image.fonwall.ru/o/yi/arch-neural-network-rendering.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/yi/arch-neural-network-rendering.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/he/neural-network-rendering-nature-fsow.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/he/neural-network-rendering-nature-fsow.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/le/einkehr-nature-lamdscapes-florals.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/le/einkehr-nature-lamdscapes-florals.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/zd/pillows-plaid-window.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/zd/pillows-plaid-window.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/nv/weeping-willow-river-sunset.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/nv/weeping-willow-river-sunset.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                }
+            ]
+        },
+        {
+            "category": 2,
+            "name": "Архитектура",
+            "photos": [
+                {
+                    "original":"https://image.fonwall.ru/o/an/asian-architecture-building-japan-mount-fuji.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/an/asian-architecture-building-japan-mount-fuji.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/rc/london-cityscape-england-sunset.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/rc/london-cityscape-england-sunset.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/fd/horizon-architecture-sky-skyline-uxfu.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/fd/horizon-architecture-sky-skyline-uxfu.jpeg?auto=compress&fit=resize&h=281&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/pq/old-buildings-water-architecture-sky.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/pq/old-buildings-water-architecture-sky.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/rc/castle-neuschwanstein-bavaria-germany.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/rc/castle-neuschwanstein-bavaria-germany.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                }
+            ]
+        },
+        {
+            "category": 1,
+            "name": "Виды природы",
+            "photos": [
+                {
+                    "original":"https://image.fonwall.ru/o/dr/sunlight-sunset-night-nature-ghca.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/dr/sunlight-sunset-night-nature-ghca.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/pe/fantasy-nature-sky.jpg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/pe/fantasy-nature-sky.jpg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/ee/fantasy-art-fiction-fnbq.jpg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/ee/fantasy-art-fiction-fnbq.jpg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/bc/girl-dress-bouquet.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/bc/girl-dress-bouquet.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/jc/forest-river-sunset.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail":"https://image.fonwall.ru/o/jc/forest-river-sunset.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                }
+            ]
+        },
+        {
+            "category": 3,
+            "name": "Подводный мир",
+            "photos": [
+                {
+                    "original": "https://image.fonwall.ru/o/wj/underwater-world-coral-bubbles-of-air.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/wj/underwater-world-coral-bubbles-of-air.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original": "https://image.fonwall.ru/o/ae/undersea-fish-coral.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ae/undersea-fish-coral.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original": "https://image.fonwall.ru/o/ht/volshebstvo-fantsy-sea.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ht/volshebstvo-fantsy-sea.jpeg?auto=compress&fit=resize&h=286&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original": "https://image.fonwall.ru/o/ff/animals-sea-fish-underwater.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ff/animals-sea-fish-underwater.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original": "https://image.fonwall.ru/o/ax/animals-fish-underwater-coral.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ax/animals-fish-underwater-coral.jpeg?auto=compress&fit=resize&h=282&w=500&display=thumb&domain=img3.fonwall.ru"
+                }
+            ]
+        },
+        {
+            "category": 4,
+            "name": "Животные",
+            "photos": [
+                {
+                    "original":"https://image.fonwall.ru/o/yg/animal-wildlife-deer-horn.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/yg/animal-wildlife-deer-horn.jpeg?auto=compress&fit=resize&h=335&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/68/Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg?auto=compress&fit=resize&w=1200&display=large&domain=img.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/68/Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg?auto=compress&fit=resize&h=334&w=500&display=thumb&domain=img.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/kp/animal-wildlife-zoo-jungle-euhe.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/kp/animal-wildlife-zoo-jungle-euhe.jpeg?auto=compress&fit=resize&h=334&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/ln/pasture-horse-mammal-stallion.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ln/pasture-horse-mammal-stallion.jpeg?auto=compress&fit=resize&h=334&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/wi/landscape-nature-mountain-sunset.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/wi/landscape-nature-mountain-sunset.jpeg?auto=compress&fit=resize&h=330&w=500&display=thumb&domain=img3.fonwall.ru"
+                }
+            ]
+        },
+        {
+            "category": 4,
+            "name": "Насекомые",
+            "photos": [
+                {
+                    "original":"https://image.fonwall.ru/o/ag/nature-wilderness-photography-meadow.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img1.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ag/nature-wilderness-photography-meadow.jpeg?auto=compress&fit=resize&h=334&w=500&display=thumb&domain=img1.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/hw/nature-wing-animal-insect-uqpa.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/hw/nature-wing-animal-insect-uqpa.jpeg?auto=compress&fit=resize&h=328&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/gk/animals-photography-insect-wildlife.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/gk/animals-photography-insect-wildlife.jpeg?auto=compress&fit=resize&h=334&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original": "https://image.fonwall.ru/o/ny/photography-macro-insect-yellow.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ny/photography-macro-insect-yellow.jpeg?auto=compress&fit=resize&h=318&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/eu/insects-head-close-up-insect.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/eu/insects-head-close-up-insect.jpeg?auto=compress&fit=resize&h=317&w=500&display=thumb&domain=img3.fonwall.ru"
+                }
+            ]
+        },
+        {
+            "category": 3,
+            "name": "Коралловые рифы",
+            "photos": [
+                {
+                    "original":"https://image.fonwall.ru/o/dd/animals-sea-nature-fish.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/dd/animals-sea-nature-fish.jpeg?auto=compress&fit=resize&h=313&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/ge/renderery-fish-sea.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ge/renderery-fish-sea.jpeg?auto=compress&fit=resize&h=313&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/ja/landscape-animals-sea-anime.jpeg?auto=compress&fit=resize&h=313&w=500&display=thumb&domain=img1.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/ja/landscape-animals-sea-anime.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img1.fonwall.ru"
+                },
+                {
+                    "original":"https://image.fonwall.ru/o/gf/blue-pattern-underwater.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img3.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/gf/blue-pattern-underwater.jpeg?auto=compress&fit=resize&h=313&w=500&display=thumb&domain=img3.fonwall.ru"
+                },
+                {
+                    "original": "https://image.fonwall.ru/o/lp/anemone-coral-reef-fish-underwater.jpeg?auto=compress&fit=resize&w=1200&display=large&domain=img1.fonwall.ru",
+                    "thumbnail": "https://image.fonwall.ru/o/lp/anemone-coral-reef-fish-underwater.jpeg?auto=compress&fit=resize&h=313&w=500&display=thumb&domain=img1.fonwall.ru"
+                }
+            ]
+        }       
+    ]
+}

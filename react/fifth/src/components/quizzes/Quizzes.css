@@ -1,0 +1,13 @@
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.content li {
+    margin: 20px 0;
+    box-shadow: 0 0 4px 1px #015e7a;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
