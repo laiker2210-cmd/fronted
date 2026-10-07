@@ -39,7 +39,7 @@
     font-size: 14px;
 }
 
-/* прижимаем цену и статус к низу карточки */
+/*цену и статус к низу карточки */
 .knife-card__footer {
     margin-top: auto;
     display: flex;

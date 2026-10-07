@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './Modal.css';
 
 function Modal(props) {
-    const { onClose, children } = props;
+    const { onClose, children, wide } = props;
 
     useEffect(() => {
         const handleKey = (event) => {
@@ -21,7 +21,10 @@ function Modal(props) {
 
     return (
         <div className="modal__overlay" onClick={onClose}>
-            <div className="modal" onClick={(event) => event.stopPropagation()}>
+            <div
+                className={`modal ${wide ? 'modal--wide' : ''}`}
+                onClick={(event) => event.stopPropagation()}
+            >
                 <button className="modal__close" onClick={onClose} aria-label="Закрыть">×</button>
                 {children}
             </div>

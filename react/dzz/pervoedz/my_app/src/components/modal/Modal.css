@@ -36,3 +36,7 @@
 .modal__close:hover {
     color: #000000;
 }
+
+.modal--wide {
+    max-width: 900px;
+}

@@ -35,3 +35,20 @@
 .knife-modal__cta:hover {
     opacity: 0.8;
 }
+
+.knife-modal__specs {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.knife-modal__specs li span {
+    font-weight: bold;
+    margin-right: 6px;
+}

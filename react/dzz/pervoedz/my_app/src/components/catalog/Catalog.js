@@ -4,7 +4,7 @@ import KnifeModal from './knifeModal/KnifeModal';
 import './Catalog.css';
 
 function Catalog(props) {
-    const { knives } = props;
+    const { knives, onContact } = props;
     const trackRef = useRef(null);
     const [selectedKnife, setSelectedKnife] = useState(null);
 
@@ -16,8 +16,9 @@ function Catalog(props) {
     };
 
     return (
-        <section className="catalog container" id="catalog">
-            <h2 className="catalog__title">Наши ножи</h2>
+        <section className="catalog " id="catalog">
+            <div className="catalog_cont container">
+<h2 className="catalog__title">Наши ножи</h2>
 
             <div className="catalog__track" ref={trackRef}>
                 {knives.map(knife => (
@@ -38,8 +39,11 @@ function Catalog(props) {
                 <KnifeModal
                     knife={selectedKnife}
                     onClose={() => setSelectedKnife(null)}
+                    onContact={onContact}
                 />
             )}
+            </div>
+            
         </section>
     );
 }
