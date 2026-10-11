@@ -1,4 +1,4 @@
-import mealsData from '../data/meals.json';
+/* import mealsData from '../data/meals.json';
 
 const allMeals = mealsData.meals || [];
 
@@ -74,4 +74,4 @@ export const mealsApi = {
     });
     return Promise.resolve({ meals: [...ings].sort().map(i => ({ strIngredient: i })) });
   },
-};
+}; */

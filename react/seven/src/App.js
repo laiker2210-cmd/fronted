@@ -1,20 +1,42 @@
-/* import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { useState } from 'react';
+import Home from './Home';
+import About from './About';
+import Articles from './Articles';
+import Layout from './components/Layout';
+import AboutInfo from './AboutInfo';
+import NotFoundPage from './NotFoundPage';
+import './App.css';
+
 
 function App() {
+
+  let [registred, setRegistred] = useState(false);
   return (
     <div>
-      <ul>
-        <li><a href="/">Home page</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/articles">Articles</a></li>
-      </ul>
+
+      <div style={{textAlign: "center"}}>
+        <h3>Пользователь авторизирован: {registred ? "TRUE" : "FALSE"}</h3>
+        <button onClick={()=>setRegistred({registred: true})}>Авторизация</button>
+      </div>
+
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={registred ? <About /> : <h2>Получить доступ к этой странице могут только авторизированные пользователи</h2>} />
+          <Route path="about/:id" element={<AboutInfo />} />
+          <Route path="articles" element={<Articles />} />
+          <Route path="articles-as" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
 
-export default App; */
+export default App;
 
-import { useState, useEffect } from 'react';
+/* import { useState, useEffect } from 'react';
 import { useMeals } from './hooks/useMeals';
 import { mealsApi } from './api/meals';
 
@@ -36,7 +58,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>🍽️ Книга рецептов</h1>
+      <h1>Книга рецептов</h1>
 
       <div style={{ marginBottom: 20 }}>
         <input
@@ -53,7 +75,7 @@ function App() {
       {error && <p style={{ color: "red" }}>Ошибка: {error}</p>}
 
       {!loading && meals.length === 0 && (
-        <p>Ничего не найдено 😢</p>
+        <p>Ничего не найдено </p>
       )}
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
@@ -69,8 +91,8 @@ function App() {
               }}
             />
             <h3>{meal.strMeal}</h3>
-            {meal.strCategory && <p>🏷️ {meal.strCategory}</p>}
-            {meal.strArea && <p>🌍 {meal.strArea}</p>}
+            {meal.strCategory && <p> {meal.strCategory}</p>}
+            {meal.strArea && <p> {meal.strArea}</p>}
           </div>
         ))}
       </div>
@@ -79,3 +101,4 @@ function App() {
 }
 
 export default App;
+ */

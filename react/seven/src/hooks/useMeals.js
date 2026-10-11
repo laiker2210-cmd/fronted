@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+/* import { useState, useEffect } from 'react';
 import { mealsApi } from '../api/meals';
 
 export function useMeals() {
@@ -22,4 +22,4 @@ export function useMeals() {
   };
 
   return { meals, loading, error, loadMeals };
-}
+}ф */
